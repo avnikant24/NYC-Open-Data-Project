@@ -1,0 +1,139 @@
+.header{
+  font-family:'Lucida Handwriting', cursive;
+  padding:25px;
+  font-size:50px;
+  text-align: center; 
+  color: rgb(228, 174, 221); 
+  font-weight:bold;
+}
+
+.header:hover{
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+nav{
+  padding:5px
+}
+
+
+nav a{
+  color:rgb(128, 24, 24);
+  font-family: 'Lucida Handwriting', cursive;
+  font-weight:bold;
+  margin:0 10px 0 10px;
+  display:inline-block;
+  width:75%;
+  text-align:center;
+  font-size:18pt;
+  text-decoration:none;
+}
+
+nav a:hover{
+  border-bottom: 2px solid rgb(0, 0, 0);
+  font-size:20pt;
+}
+
+.container{
+  display: flex;
+  align-items: center; 
+  gap: 5px; 
+}
+
+.text-column{
+  font-family:Cambria;
+  font-size:20px;
+  text-align:center;
+  background: #774860;       
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 0;                  
+}
+
+.text-list{
+  font-family:Cambria;
+  font-size:20px;
+  text-align:center;
+  background: #774860;       
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  margin: 0;                  
+}
+
+footer {
+    border: 4px solid rgb(248, 206, 206);
+    background-color: #fefefe; 
+    color: #000000; 
+    padding: 40px 0; 
+    margin-top: 50px; 
+    width: 100%;
+}
+
+.footer-container {
+    font-family:Cambria;
+    font-size:20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1; 
+    min-width: 200px; 
+    margin: 10px; 
+}
+
+.footer-section h3 {
+    color: #1c3b1096;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #020000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover, .footer-section a:focus {
+    color: #690d0d; 
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-section h3 {
+        border-bottom: none;
+    }
+
+    .footer-section a {
+        display: inline; 
+        margin: 0 5px;
+    }
+}
