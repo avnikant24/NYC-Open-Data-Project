@@ -3,42 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>WD_6.7 Demo</title>
+    <title>Avni K. - NYC Open Data Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="fillDropDown.js"></script>
     <script src="script.js"></script>
    </head>
   <body onload="init()">
-    <div id="banner" class="container center">
-      <div style="text-align:center">
-          <h1>NYC Open Data</h1>
-          <h2>Filtering 311 Service Requests by Multiple Criteria</h2>
-      </div>
-    </div>
-    
-    </div>
-   <div class="container">
+
+<div class="header2">
+  <h1>2018 Squirrel Census Information</h1>
+</div>
+
+<nav class = "container">
+<a href="index.html">Homepage</a>
+<a href="info.html">Information</a>
+<a href="analysis.html">Analysis</a>
+</nav>
+</body>
+
+
+    <div class="container">
       <div id="leftPanel">
         <div class="card">
-          <h3>By Age of Squirrel</h3>
-          <p><span class="highlight"></span>
-            Traverse through all the 2018 Central Park Census by the age of each squirrel as adult or juvenile.</p>
-          <input type="text" id="age" placeholder="Enter age">
-          <select id="shift"></select>
+          <h3>By Fur</h3>
+          <span class="highlight"></span>
+        
+          <input type="text" id="borough" placeholder="Enter fur color">
           <hr></hr>
-          <a class="button" onclick="filterByAge()"> Search </a>
+          <a class="button" onclick="filterByFur()"> Search </a>
         </div>
- 
-
         <div class="card">
-          <h3>By Complaint Type or Descriptor</h3>
-          <p><span class="highlight">Scenario:</span>
-            Traverse through all the 311 Service Request and filter entries by either complaint type or descriptor.</p>
-          <select id="complaint_types"></select>
-          <select id="descriptors"></select>
+          <h3>By Age of Squirrel</h3>
+          <span class="highlight"></span>
+          <input type="text" id="age" placeholder="Enter age (juvenile or adult)">
+
+          
           <hr></hr>
-          <a class="button" onclick="filterByComplaintOrDescriptor()"> Search </a>
+          <a class="button" onclick="filterbyAge()"> Search </a>
         </div>
+        
       </div>
       <div class="card" id="rightPanel">
         <h1>Output</h1>
