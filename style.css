@@ -1,5 +1,5 @@
 .header{
-  font-family:'Lucida Handwriting', cursive;
+  font-family:'Baskersville', cursive;
   padding:25px;
   font-size:40px;
   text-align: center; 
@@ -185,6 +185,7 @@ nav a:hover{
   margin:10px;
   padding:10px;
   border:1px solid gray;
+  font-family:Palatino;
   text-align:center;  
   box-shadow:2px 2px 2px black;
   border-radius:2px;  
@@ -235,7 +236,7 @@ nav a:hover{
 }
 
 .header2{
-  font-family:'Lucida Handwriting', cursive;
+  font-family:'Baskersville', cursive;
   padding:25px;
   font-size:40px;
   text-align: center; 
@@ -249,7 +250,7 @@ nav a:hover{
 }
 
 .header3{
-  font-family:'Lucida Handwriting', cursive;
+  font-family:'Baskersville', cursive;
   padding:25px;
   font-size:40px;
   text-align: center; 

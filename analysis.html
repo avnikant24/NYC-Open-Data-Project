@@ -3,7 +3,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="c3.css" rel="stylesheet" type="text/css" />
+    <script src="c3.js"></script>
+    <script src="d3.js"></script>
+    <script src="helper.js"></script>  
+    <script src="script.js"></script>
 </head>
 
 <div class="header3">
@@ -23,3 +29,39 @@
 <a href="analysis.html">Analysis</a>
 </nav>
 </body>
+
+
+  
+  <body onload="init()">
+    
+    <div class="container">
+      <div id="panel">
+        
+        <div class="card">
+          <h3>Select Chart Type</h3>
+          <select id="chartType" style="width:100px;">
+            <option value="bar">Bar</option>
+            <option value="pie">Pie</option>
+          </select>
+        </div>
+        
+        <div class="card">
+          <h3>Squirrels by Location</h3>
+          <p><span class="highlight">Scenario:</span>Find each number of squirrels each location.</p>
+          <a class="button" onclick="squirrelsByLocation()"> Show Chart </a>
+        </div>
+        
+        <div class="card">
+          <h3>Squirrels by Fur Color</h3>
+          <p><span class="highlight">Scenario:</span>Find the number of squirrels by each fur color.</p>
+          <a class="button" onclick="squirrelsByColor()"> Show Chart </a>
+        </div>
+      </div>
+      
+      <div class="card">
+       <div id="chart"></div> 
+      </div>
+    </div>
+
+  </body>
+</html>

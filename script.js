@@ -1,9 +1,10 @@
-let data, info;
+let data, info, output; 
 
 async function init(){  
-  let link = "squirrel.json";
+  let link = "squirrel.json"; 
   info = await fetch(link);
   data = await info.json();
+  console.log(data);
 
 
   output = document.getElementById("output");
@@ -28,41 +29,41 @@ async function init(){
   }
   result.innerHTML = `${ct} Results found`;
   output.innerHTML = build;
+}
 
 
-
-function filterByFur(){
-  let age = document.getElementById("age").value;
+function filterbyFur(){
+  let age = document.getElementById("fur").value;
   let build = "";
   let ct = 0;
 
   for(let i = 0; i < data.length; i+=1){
     let census = data[i];
-    if(census.age == age && census.shift == shift){
+    if(complaint.incident_zip == zip && complaint.agency_name == agency){
       build += `<div class="fitted card">
-                    <h3>${census.age}</h3>
+                    <h3>${complaint.complaint_type}</h3>
                     <hr>
-                    <p>${census.location}</p>
-                    <p>${census.primary_fur_color}</p>
-                    <p>${census.highlight_fur_color}</p>
+                    <p>${complaint.borough}</p>
+                    <p>${complaint.incident_zip}</p>
+                    <p>${complaint.descriptor}</p>
                     <hr>
-                    <p>${census.unique_squirrel_id}</p>
+                    <p>${complaint.created_date}</p>
                     <hr>
-                    <p>${census.shift}</p>
+                    <p>${complaint.agency}</p>
                 </div>`;
       ct += 1;
     }
   }
   result.innerHTML = `${ct} Results found`;
   output.innerHTML = build;
-}}
+}
 
-function filterByAge(){
+function filterbyAge(){
   let age = document.getElementById("age").value;
   let build = "";
   let ct = 0;
 
-  for(let i = 0; i < data.length; i+=1){
+   for(let i = 0; i < data.length; i+=1){
     let census = data[i];
     if(census.age == age || census.shift == shift){
       build += `<div class="fitted card">
@@ -81,4 +82,18 @@ function filterByAge(){
   }
   result.innerHTML = `${ct} Results found`;
   output.innerHTML = build;
+}
+
+function squirrelsByFur(){
+  let g = 0, c = 0, b = 0;
+  for(let i = 0; i < data.length; i++){
+    let census = data[i];
+    if(census.primary_fur_color == "Gray"){
+      g++;
+    }else if(census.primary_fur_color == "Cinnamon"){
+      c++;
+    }else if(census.primary_fur_color == "Black"){
+      b++;
+    }
+  }
 }
