@@ -84,7 +84,7 @@ function filterbyAge(){
   output.innerHTML = build;
 }
 
-function squirrelsByFur(){
+function squirrelsByColor(){
   let g = 0, c = 0, b = 0;
   for(let i = 0; i < data.length; i++){
     let census = data[i];
@@ -96,4 +96,38 @@ function squirrelsByFur(){
       b++;
     }
   }
+
+    let chartData = [
+    ["Gray", g],
+    ["Cinnamon",c],
+    ["Black", b]
+  ];
+
+   let chartType = get("chartType").value;  
+
+  displayChart(chartData,"chart",chartType)
 }
+
+function squirrelsByLocation(){
+  let gp = 0; ag = 0;
+  for(let i = 0; i < data.length; i++){
+    let census = data[i];
+    if(census.location == "Ground Plane"){
+      gp++;
+    }else if(census.location == "Above Ground"){
+      ag++;
+    }
+  }
+
+  let chartData2 = [
+    ["Ground Plane",gp],
+    ["Above Ground",ag]
+  ];
+  
+
+  let chartType = get("chartType").value;  
+
+  displayChart(chartData2,"chart",chartType)
+
+}
+

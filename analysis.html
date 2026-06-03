@@ -30,7 +30,11 @@
 </nav>
 </body>
 
-
+<div class = "text-column2">
+    <h2>Brief Findings of Charts</h2>
+    <p>Fur: This database is about a comprehensive, crowd-sourced record of the Eastern Gray Squirrel population in Central Park, New York.</p>
+    <p>Location: 2018 Central Park Squirrel Census dataset on NYC Open Data was created by The Squirrel Census, an independent multimedia science and storytelling project. It is the brainchild of writer Jamie Allen, who previously ran similar grassroots volunteer counts in Atlanta. </p>
+</div>
   
   <body onload="init()">
     
@@ -42,26 +46,55 @@
           <select id="chartType" style="width:100px;">
             <option value="bar">Bar</option>
             <option value="pie">Pie</option>
+            <option value = "donut">Donut</option>
           </select>
         </div>
         
         <div class="card">
           <h3>Squirrels by Location</h3>
-          <p><span class="highlight">Scenario:</span>Find each number of squirrels each location.</p>
+          <p><span class="highlight"></span>Find each number of squirrels each location.</p>
           <a class="button" onclick="squirrelsByLocation()"> Show Chart </a>
         </div>
         
         <div class="card">
           <h3>Squirrels by Fur Color</h3>
-          <p><span class="highlight">Scenario:</span>Find the number of squirrels by each fur color.</p>
+          <p><span class="highlight"></span>Find the number of squirrels by each fur color.</p>
           <a class="button" onclick="squirrelsByColor()"> Show Chart </a>
         </div>
       </div>
+
+
+      
       
       <div class="card">
        <div id="chart"></div> 
       </div>
     </div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>NYC Open Data Project - 2018 Squirrel Census Central Park</h3>
+            <p>This website serves to provide accurate information about this data base.</p>
+            <p>&copy; 2026 All Rights Reserved.</p>
+        </div>
 
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact-info">
+            <h3>Contact Info.</h3>
+            <p>Avni Kant </p>
+            <p>Email: avnik3@nycstudents.net</p>
+            <p>Bayside HS - Web Development Grade 10</p>
+        </div>
+    </div>
+</footer>
   </body>
 </html>
