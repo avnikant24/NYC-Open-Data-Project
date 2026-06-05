@@ -36,20 +36,20 @@ function filterbyFur(){
   let age = document.getElementById("fur").value;
   let build = "";
   let ct = 0;
-
+    
   for(let i = 0; i < data.length; i+=1){
     let census = data[i];
-    if(complaint.incident_zip == zip && complaint.agency_name == agency){
+    if(census.primary_fur_color == age || census.primary_fur_color == age){
       build += `<div class="fitted card">
-                    <h3>${complaint.complaint_type}</h3>
+                    <h3>${census.age}</h3>
                     <hr>
-                    <p>${complaint.borough}</p>
-                    <p>${complaint.incident_zip}</p>
-                    <p>${complaint.descriptor}</p>
+                    <p>${census.location}</p>
+                    <p>${census.primary_fur_color}</p>
+                    <p>${census.highlight_fur_color}</p>
                     <hr>
-                    <p>${complaint.created_date}</p>
+                    <p>${census.unique_squirrel_id}</p>
                     <hr>
-                    <p>${complaint.agency}</p>
+                    <p>${census.shift}</p>
                 </div>`;
       ct += 1;
     }
@@ -65,7 +65,7 @@ function filterbyAge(){
 
    for(let i = 0; i < data.length; i+=1){
     let census = data[i];
-    if(census.age == age || census.shift == shift){
+    if(census.age == age || census.age == age){
       build += `<div class="fitted card">
                     <h3>${census.age}</h3>
                     <hr>
