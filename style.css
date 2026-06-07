@@ -280,6 +280,7 @@ body {
 
 .central{
   border: 4px solid rgb(255, 255, 255);
+  margin-left: 10px;
   height:400px;
   width: 500px;
 }
@@ -293,11 +294,22 @@ body {
 .squirrel{
   border: 4px solid rgb(255, 255, 255);
   height:400px;
-  width: 500px;
+  width: 450px;
 }
 
 .squirrel:hover{
   filter: grayscale(60%);
+  transform:scale(1.05);
+  transition: transform 0.8s;
+}
+
+.at{
+  border:4px solid rgb(255, 255, 255);
+  height:400px;
+  width: 500px;
+}
+
+.at:hover{
   transform:scale(1.05);
   transition: transform 0.8s;
 }
@@ -308,3 +320,13 @@ body {
 
 }
 
+.text-list2{
+  font-family:Cambria;
+  font-size:21px;
+  text-align:center;
+  background: #96d5ff;       
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 0;                  
+}
