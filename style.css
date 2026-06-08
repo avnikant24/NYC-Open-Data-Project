@@ -330,3 +330,15 @@ body {
   border-radius: 6px;
   margin: 0;                  
 }
+
+.counting{
+  border:4px solid rgb(255, 255, 255);
+  height:400px;
+  width: 600px;
+}
+
+
+.counting:hover{
+  transform:scale(1.03);
+  transition: transform 0.8s;
+}
